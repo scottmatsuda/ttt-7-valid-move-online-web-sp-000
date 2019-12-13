@@ -5,15 +5,15 @@ def valid_move?(board, index)
     return false
   end
   
-  if !index.between?(0, 9)
+  if !index.between?(0, 8)
     return false
   end
  
-  if index.between?(0, 9) && !position_taken?(board, index)
+  if index.between?(0, 8) && !position_taken?(board, index)
     return true
   end
   
-  if index.between?(0, 9) && board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  if index.between?(0, 8) && board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return true
   end
 
